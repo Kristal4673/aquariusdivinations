@@ -1,22 +1,107 @@
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 // Array of tarot card names
-var cards = ["The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor", "The Hierophant", "The Lovers", "The Chariot", "Strength", "The Hermit", "Wheel of Fortune", "Justice", "The Hanged Man", "Death", "Temperance", "The Devil", "The Tower", "The Star", "The Moon", "The Sun", "Judgment", "The World"];
-
 function drawCards() {
-    var cards = ["The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor", "The Hierophant", "The Lovers", "The Chariot", "Strength", "The Hermit", "Wheel of Fortune", "Justice", "The Hanged Man", "Death", "Temperance", "The Devil", "The Tower", "The Star", "The Moon", "The Sun", "Judgment", "The World"];
+  
+    var tarotCards = [
+      "the fool",
+      "the magician",
+      "the high priestess",
+      "the empress",
+      "the emperor",
+      "the hierophant",
+      "the lovers",
+      "the chariot",
+      "strength",
+      "the hermit",
+      "wheel of fortune",
+      "justice",
+      "the hanged man",
+      "death",
+      "temperance",
+      "the devil",
+      "the tower",
+      "the star",
+      "the moon",
+      "the sun",
+      "judgment",
+      "the world",
+      "ace of wands",
+      "two of wands",
+      "three of wands",
+      "four of wands",
+      "five of wands",
+      "six of wands",
+      "seven of wands",
+      "eight of wands",
+      "nine of wands",
+      "ten of wands",
+      "page of wands",
+      "knight of wands",
+      "queen of wands",
+      "king of wands",
+      "ace of cups",
+      "two of cups",
+      "three of cups",
+      "four of cups",
+      "five of cups",
+      "six of cups",
+      "seven of cups",
+      "eight of cups",
+      "nine of cups",
+      "ten of cups",
+      "page of cups",
+      "knight of cups",
+      "queen of cups",
+      "king of cups",
+      "ace of swords",
+      "two of swords",
+      "three of swords",
+      "four of swords",
+      "five of swords",
+      "six of swords",
+      "seven of swords",
+      "eight of swords",
+      "nine of swords",
+      "ten of swords",
+      "page of swords",
+      "knight of swords",
+      "queen of swords",
+      "king of swords",
+      "ace of pentacles",
+      "two of pentacles",
+      "three of pentacles",
+      "four of pentacles",
+      "five of pentacles",
+      "six of pentacles",
+      "seven of pentacles",
+      "eight of pentacles",
+      "nine of pentacles",
+      "ten of pentacles",
+      "page of pentacles",
+      "knight of pentacles",
+      "queen of pentacles",
+      "king of pentacles"
+    ];
 
+    const shuffledCards = shuffleArray(tarotCards);
+    const drawnCards = shuffledCards.slice(0, 9); // Get the first 9 cards
+  
     var cardContainer = document.getElementById("cardContainer");
     cardContainer.innerHTML = "";
 
-    for (var i = 0; i < 9; i++) {
-        var randomIndex = Math.floor(Math.random() * cards.length);
-        var card = cards.splice(randomIndex, 1)[0];
-
-        var cardElement = document.createElement("div");
-        cardElement.classList.add("card");
-        cardElement.textContent = card;
-
-        cardContainer.appendChild(cardElement);
-    }
+    drawnCards.forEach(card => {
+      const cardImage = document.createElement('img');
+      cardImage.src = `./img/cardimgs/${card}.png`; // Replace with the actual path to your card images
+      cardImage.alt = card;
+      cardImage.style.height = '250px';
+      cardContainer.appendChild(cardImage);
+    });
 }
 
 
