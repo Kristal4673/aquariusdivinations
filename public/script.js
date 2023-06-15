@@ -21,7 +21,7 @@ function drawCards() {
       "the hermit",
       "wheel of fortune",
       "justice",
-      "the hanged man",
+      "the hangman",
       "death",
       "temperance",
       "the devil",
