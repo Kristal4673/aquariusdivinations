@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
         <nav>
           <ul>
@@ -16,32 +17,66 @@
         </nav>
     </header>
     <h1>Tarot Card Reading Game</h1>
+    <p class="p-cover">Dear Seeker,
+        Dear Seeker,
+
+        Thank you for providing your birth details. Prepare to embark on a journey of tarot insights tailored specifically to you. As the cards are drawn, trust in the wisdom they hold and the guidance they offer. Embrace the transformative power of these insights and allow them to illuminate your path.
+
+        Enjoy your tarot experience and may it bring you clarity and inspiration.
+
+        Best wishes on your journey of self-discovery through tarot.
+    </p>
     <div id="astrologyContainer">
         <div class="form-container">
             <h2>Enter Birth Details</h2>
             <form id="birthForm">
-              <label for="day">Day:</label>
-              <input type="text" id="day" name="day" required>
-              <label for="month">Month:</label>
-              <input type="text" id="month" name="month" required>
-              <label for="year">Year:</label>
-              <input type="text" id="year" name="year" required>
-        
-              <label for="hour">Hour:</label>
-              <input type="text" id="hour" name="hour" required>
-              <label for="minute">Minute:</label>
-              <input type="text" id="minute" name="minute" required>
-        
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-              <label for="latitude">Latitude:</label>
-              <input type="text" id="latitude" name="latitude" required>
-              <label for="longitude">Longitude:</label>
-              <input type="text" id="longitude" name="longitude" required>
-              <label for="timezone">Time Zone:</label>
-              <input type="text" id="timezone" name="timezone" required>
-        
-              <input type="submit" value="Submit">
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="day">Day:</label>
+                        <input type="text" id="day" name="day" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="month">Month:</label>
+                        <input type="text" id="month" name="month" required>
+                    </div>
+                </div>            
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="year">Year:</label>
+                        <input type="text" id="year" name="year" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="hour">Hour:</label>
+                        <input type="text" id="hour" name="hour" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="minute">Minute:</label>
+                        <input type="text" id="minute" name="minute" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="latitude">Latitude:</label>
+                        <input type="text" id="latitude" name="latitude" required>
+                    </div>
+                    <div class="form-column">
+                        <label for="longitude">Longitude:</label>
+                        <input type="text" id="longitude" name="longitude" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label for="timezone">Time Zone:</label>
+                        <input type="text" id="timezone" name="timezone" required>
+                    </div>
+                </div>
+                <input type="submit" value="Submit">
             </form>
         </div>
         <div class="result-container">
@@ -49,5 +84,12 @@
             <div id="result"></div>
         </div>
     </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2023 Tarot Crystal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
 </body>
 </html>

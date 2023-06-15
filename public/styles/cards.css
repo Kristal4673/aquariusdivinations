@@ -50,3 +50,8 @@ button {
 button:hover {
     background-color: #7a3cb2;
 }
+
+.p-cover{
+    margin: 0px 10vw;
+    line-height: 3em;
+}

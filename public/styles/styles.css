@@ -1,8 +1,13 @@
 body {
-    background-color: #1e003d;
+    background-image: url("../img/BSP_054.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
+    position: relative;
+    height: min(100%, 100vh);
 }
 
 h1 {
@@ -10,7 +15,16 @@ h1 {
     margin-top: 0;
 }
 
-
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 0, 51, 0.8); /* Dark purple color with opacity */
+  z-index: -1;
+}
 
 /* Existing styles */
 
@@ -54,3 +68,21 @@ nav a.active {
   background-color: #555;
 }
   
+/* birthinfo.css */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* paragraph intros  */
+.p-cover{
+  margin: 0px 10vw;
+  line-height: 3em;
+}
