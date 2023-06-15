@@ -1,0 +1,52 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #af5eff;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #af5eff;
+  }
+  
+  p {
+    color: #fff;
+  }
+  
+  a {
+    color: #af5eff;
+    text-decoration: none;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3d0057;
+    color: #fff;
+    border: none;
+  }
+  
+  input[type="submit"] {
+    background-color: #af5eff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #7500a3;
+  }
+  

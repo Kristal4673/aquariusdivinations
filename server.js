@@ -23,6 +23,10 @@ app.get('/birthinfo', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'pages/birthinfo.html'));
 });
 
+app.get('/contact', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pages/contact.html'));
+});
+
 app.post('/astrology', async (req, res) => {
     console.log(req.body);
     const { day, month, year, hour, min, name, lat, lon, tzone } = req.body;
