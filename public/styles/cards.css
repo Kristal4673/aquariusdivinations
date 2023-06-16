@@ -57,3 +57,11 @@ button:hover {
     margin: 0px 10vw;
     line-height: 3em;
 }
+@keyframes shuffleAnimation {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }

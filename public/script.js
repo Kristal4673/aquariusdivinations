@@ -5,7 +5,7 @@ function shuffleArray(array) {
   }
   return array;
 }
-// Array of tarot card names
+// Array }of tarot card names
 function drawCards() {
   
     var tarotCards = [
@@ -95,11 +95,12 @@ function drawCards() {
     var cardContainer = document.getElementById("cardContainer");
     cardContainer.innerHTML = "";
 
-    drawnCards.forEach(card => {
+    drawnCards.forEach((card, index) => {
       const cardImage = document.createElement('img');
       cardImage.src = `./img/cardimgs/${card}.png`; // Replace with the actual path to your card images
       cardImage.alt = card;
       cardImage.style.height = '250px';
+      cardImage.style.animation = `shuffleAnimation 0.5s ${(index * 0.1) + 0.5}s`; // Adjust animation timing
       cardContainer.appendChild(cardImage);
     });
 }
