@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarot Card Reading Game</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/cards.css">
+</head>
+<body>
+    <!-- Purple overlay -->
+    <div class="overlay"></div>
+    <!-- Header / Navbar -->
+    <header>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/birthinfo">Birth Info</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Tarot Game -->
+    <h1>Tarot Card Reading Game</h1>
+    <p class="p-cover">Tarot Beginning Message:
+        Welcome, seeker of truth and guidance. As you draw your cards and embark on this journey, remember that the tarot holds profound wisdom and insight into your life's path. With each card you unveil, you have the power to shape your destiny.
+        
+        Approach this experience with an open heart and a receptive mind. The cards are not mere predictors of fate but mirrors reflecting your innermost self. They offer guidance, shedding light on your strengths, challenges, and the choices that lie before you.
+        
+        As you explore the depths of the tarot, remember that you hold the ultimate power to manifest your desires and create your own reality. The cards are a tool to awaken your intuition and guide you towards self-discovery, growth, and transformation.
+        
+        Embrace the messages that unfold before you, both the ones that bring comfort and the ones that challenge you. Trust in your innate wisdom and use the tarot as a compass to navigate the twists and turns of your journey.
+        
+        May your exploration of the tarot be filled with profound insights, clarity, and empowerment. Embrace the power within you as you draw your cards and set forth on a path of self-discovery.
+        
+        Remember, your fate is not sealed but constantly evolving. The tarot simply serves as a guiding light to help you uncover the depths of your potential and make choices aligned with your highest purpose.
+        
+        Open your heart, draw your cards, and embark on this transformative voyage. The universe awaits, ready to reveal its secrets and support you on your extraordinary journey.</p>
+    <div class="container">
+        <div class="button-container"> <!-- Added -->
+            <button onclick="drawCards()">Draw Cards</button>
+            <button onclick="clearCards()">Clear Cards</button>
+        </div>
+        <div id="cardContainer" class="card-grid">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+            <div class="card" id="card5"></div>
+            <div class="card" id="card6"></div>
+            <div class="card" id="card7"></div>
+            <div class="card" id="card8"></div>
+            <div class="card" id="card9"></div>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2023 Tarot Crystal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

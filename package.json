@@ -2,11 +2,12 @@
   "name": "tarot",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "live": "nodemon server.js"
+    "live": "nodemon server.js",
+    "build": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,6 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^3.0.1"
   }
 }
